@@ -67,14 +67,14 @@ body {
 }
 
 .password-container {
-    display: inline-block;
+    
     position: relative;
 }
 
 .fa-eye {
     position: absolute;
-    top: 15px;
-    right: 20px;
+    top: 26px;
+    right: 10px;
     cursor: pointer;
     color: gray;
 }
