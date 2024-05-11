@@ -3,6 +3,8 @@ const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
+const showPassword = document.querySelector(".fa-eye");
+const showPassword2 = document.querySelector(".eye2");
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -81,11 +83,17 @@ const validateInputs = () => {
     }
 }; 
 
-const showPassword = document.querySelector(".fa-eye");
+
 showPassword.addEventListener("click", function() {
 this.classList.toggle("fa-eye-slash");
 const type = password.getAttribute("type") === "password" ? "text" : "password";
 password.setAttribute("type", type);
+})
+
+showPassword2.addEventListener("click", function() {
+    this.classList.toggle("fa-eye-slash");
+    const type = password2.getAttribute("type") === "password" ? "text" : "password";
+    password2.setAttribute("type", type);
 })
 
 
