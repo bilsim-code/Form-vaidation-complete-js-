@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Validation</title>
-    
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style4.css" />
+    
   </head>
   <body>
     <div class="container">
@@ -22,32 +22,32 @@
           <input type="email" id="email" placeholder="Enter your email" />
           <div class="error"></div>
         </div>
-        <div class="input-control">
+        <div class="input-control password-container">
           <label for="password">Password:</label>
-          <div class="password-container">
             <input
               type="password"
               id="password"
               placeholder="Enter your password"
             />
             <i class="fa-solid fa-eye"></i>
-          </div>
+          
           <div class="error"></div>
         </div>
 
-        <div class="input-control">
+        <div class="input-control password-container">
           <label for="password2">Password again: </label>
           <input
             type="password"
             id="password2"
             placeholder="Enter password again"
           />
+          <i class="fa-solid fa-eye eye2"></i>
           <div class="error"></div>
         </div>
 
         <button type="submit">Sign up</button>
       </form>
     </div>
-    <script src="script.js"></script>
+    <script src="script4.js"></script>
   </body>
 </html>
